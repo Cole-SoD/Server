@@ -5302,6 +5302,7 @@ void Client::UnscribeSpellAll(bool update_client)
 		if(m_pp.spell_book[i] != 0xFFFFFFFF)
 			UnscribeSpell(i, update_client);
 	}
+	UnmemSpellAll();
 }
 
 void Client::UntrainDisc(int slot, bool update_client)
